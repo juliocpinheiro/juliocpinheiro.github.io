@@ -131,7 +131,6 @@ body::before{
 #resume ul li
 {
     width: 115px;
-    max-height: 110px;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, var(--general-opacity));
     font-size: var(--secondary-font-size);
@@ -139,7 +138,7 @@ body::before{
     border-radius: 1em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     transition: box-shadow var(--general-transition-time) ease;
 }
 
@@ -151,6 +150,10 @@ body::before{
 #resume ul li p.resume-highlight
 {
     font-size: calc(2 * var(--primary-font-size));
+}
+
+#social ul {
+    gap: 1em;
 }
 
 #social ul li {
